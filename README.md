@@ -1,1 +1,1 @@
-# paging
+#  carousel by JQuery 

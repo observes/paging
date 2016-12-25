@@ -24,17 +24,17 @@
 		 		var firstitem=$(this).find(".silderpic>li:first").clone();//克隆第一个li
 		 		var lastitem=$(this).find(".silderpic>li:last").clone();//克隆最后一个li
 		 		$(this).find(".silderpic").append(firstitem).prepend(lastitem);//把最后一个li加到最前，最第一个li加到最后
-		 		var count  =  $(this).find('#btn>li').length
+		 		var count  =  $(this).find('#btn>li').length;
 		 		var ulWidth  = (count+2)*imgW ;
 		 		$(this).find(".silderpic").css({'width':ulWidth,"left":-imgW,"height":imgH});//设置ul
-		 		$(this).find(".silderpic>li").css({'width':imgW,"height":imgH})//设置ul>li
-		 		$(this).find(".silderpic>li img").css({'width':imgW,"height":imgH})//设置ul>li>img
+		 		$(this).find(".silderpic>li").css({'width':imgW,"height":imgH});//设置ul>li
+		 		$(this).find(".silderpic>li img").css({'width':imgW,"height":imgH});//设置ul>li>img
 
 
 		 		//设置左右按钮的位置
-		 		var  btnTop = (imgH-60)/2 //60为按钮背景图片的大小
-		 		$(this).find(".leftbtn").css({'top':btnTop })
-		 		$(this).find(".rightbtn").css({'top':btnTop })
+		 		var  btnTop = (imgH-60)/2; //60为按钮背景图片的大小
+		 		$(this).find(".leftbtn").css({'top':btnTop });
+		 		$(this).find(".rightbtn").css({'top':btnTop });
 
 		 		//下面控制台的样式
 		 		var btnW  = count *(20+10);//20为每个控制按钮的大小 ，右边相聚10px
@@ -49,10 +49,10 @@
 		 		}
 		 		//是否显示左右按钮
 		 		if (opts.isShowBtn) {
-		 			$(this).find(".leftbtn").show()
+		 			$(this).find(".leftbtn").show();
 		 			$(this).find(".rightbtn").show()
 		 		} else {
-		 			$(this).find(".leftbtn").hide()
+		 			$(this).find(".leftbtn").hide();
 		 			$(this).find(".rightbtn").hide()
 		 		}
 		 		var that =$(this);

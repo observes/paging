@@ -5,7 +5,7 @@
 ```
 ### 第二步：引入jq库
 ```html
-<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.js" type="text/javascript" charset="utf-8"></script>
 ```
 ### 第三步：引入插件
 ```html

@@ -45,3 +45,21 @@
 	$("#aa").myslide(opts);
 </script>
 ```
+# 数据表格(datagrid)
+```javascript
+<script type="text/javascript">
+	 $(function(){
+                $("#mytable").datagrid({
+                    // 数据加载地址
+                    url:"data/employee.json"
+                    ,width:1200
+                    ,height:600
+                    // 添加事件
+                    ,onRowRightClick : function(event, rowData){
+                        // 开放的行右击事件
+                        console.debug(rowData)
+                    }
+                });
+            })
+</script>
+```

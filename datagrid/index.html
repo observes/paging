@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据表格</title>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.getRemoteData.js"></script>
+    <script type="text/javascript" src="js/jquery.datagrid.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#mytable").datagrid({
+                // 数据加载地址
+                url:"data/employee.json"
+                ,width:1200
+                ,height:600
+                // 添加事件
+                ,onRowRightClick : function(event, rowData){
+
+                    console.debug(rowData);
+                    // 开放的行右击事件
+//                    alert('我被点了！！');
+                    console.debug('我被点了！！');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+    <div align="center">
+        <h1>员工管理</h1>
+        <table id="mytable" border="1" cellspacing="0" width="800">
+            <thead>
+                <tr>
+                    <th field="id">编号</th>
+                    <th field="name">姓名</th>
+                    <th field="age">年龄</th>
+                    <th field="gender">性别</th>
+                    <th field="job">职业</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

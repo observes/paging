@@ -1,0 +1,57 @@
+{
+	"success":true,
+	"rows" : 7,
+	"datas": [
+		{
+			"id":1,
+			"name":"张三",
+			"age":18,
+			"gender":"男",
+			"job":"攻城狮",
+			"email":"zs@qq.com",
+			"tel":"1568888888"
+		}
+		,{
+			"id":2,
+			"name":"李四",
+			"age":28,
+			"gender":"女",
+			"job":"社稷师"
+		}	
+		,{
+			"id":3,
+			"name":"王五",
+			"age":20,
+			"gender":"男",
+			"job":"社稷师"
+		}	
+		,{
+			"id":4,
+			"name":"赵六",
+			"age":18,
+			"gender":"女",
+			"job":"攻城狮"
+		}	
+		,{
+			"id":5,
+			"name":"田七",
+			"age":22,
+			"gender":"男",
+			"job":"未知"
+		}	
+		,{
+			"id":6,
+			"name":"王八",
+			"age":12,
+			"gender":"男",
+			"job":"未知"
+		}	
+		,{
+			"id":7,
+			"name":"田七",
+			"age":21,
+			"gender":"女",
+			"job":"攻城狮"
+		}
+	]
+}
